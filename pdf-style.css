@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap');
+
+:root {
+  --bg: #0a0a14;
+  --text: #ececf1;
+  --text-muted: #9a9ab0;
+  --text-dim: #6a6a84;
+  --purple: #9333ea;
+  --purple-light: #a855f7;
+  --purple-dim: #5b21b6;
+  --amber: #f59e0b;
+  --amber-light: #fbbf24;
+  --divider: #1f1f2e;
+  --code-bg: #16162a;
+  --quote-bg: #14142a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 11pt;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+/* Headings */
+h1 {
+  font-size: 28pt;
+  font-weight: 800;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 0.4em;
+  letter-spacing: -0.02em;
+  page-break-before: always;
+  page-break-after: avoid;
+  border-bottom: 3px solid var(--amber);
+  padding-bottom: 0.3em;
+}
+
+h1:first-of-type {
+  page-break-before: avoid;
+}
+
+h2 {
+  font-size: 20pt;
+  font-weight: 700;
+  color: var(--purple-light);
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  letter-spacing: -0.01em;
+  page-break-after: avoid;
+  border-left: 4px solid var(--purple);
+  padding-left: 0.6em;
+}
+
+h3 {
+  font-size: 14pt;
+  font-weight: 700;
+  color: var(--amber);
+  margin-top: 1.2em;
+  margin-bottom: 0.4em;
+  page-break-after: avoid;
+}
+
+h4 {
+  font-size: 12pt;
+  font-weight: 600;
+  color: var(--text);
+  margin-top: 1em;
+  margin-bottom: 0.3em;
+  page-break-after: avoid;
+}
+
+/* Paragraphs */
+p {
+  margin: 0.5em 0;
+  color: var(--text);
+}
+
+/* Strong / em */
+strong {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+em {
+  color: var(--amber-light);
+  font-style: italic;
+}
+
+/* Links */
+a {
+  color: var(--amber);
+  text-decoration: none;
+  border-bottom: 1px solid var(--amber);
+}
+
+/* Lists */
+ul, ol {
+  margin: 0.5em 0;
+  padding-left: 1.5em;
+}
+
+li {
+  margin: 0.2em 0;
+  color: var(--text);
+}
+
+ul li::marker {
+  color: var(--amber);
+}
+
+ol li::marker {
+  color: var(--purple-light);
+  font-weight: 600;
+}
+
+/* Code */
+code {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 9.5pt;
+  background: var(--code-bg);
+  color: var(--amber);
+  padding: 1px 6px;
+  border-radius: 3px;
+  border: 1px solid var(--divider);
+}
+
+pre {
+  background: var(--code-bg);
+  color: var(--text);
+  padding: 1em 1.2em;
+  border-radius: 6px;
+  border-left: 3px solid var(--purple);
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 9pt;
+  line-height: 1.5;
+  overflow-x: auto;
+  page-break-inside: avoid;
+  margin: 1em 0;
+}
+
+pre code {
+  background: transparent;
+  border: none;
+  color: var(--text);
+  padding: 0;
+  font-size: inherit;
+}
+
+/* Blockquotes */
+blockquote {
+  background: var(--quote-bg);
+  border-left: 4px solid var(--amber);
+  padding: 0.8em 1.2em;
+  margin: 1em 0;
+  color: var(--text-muted);
+  font-style: italic;
+  page-break-inside: avoid;
+}
+
+blockquote p {
+  margin: 0.3em 0;
+  color: var(--text-muted);
+}
+
+/* Horizontal rule (page break) */
+hr {
+  border: none;
+  border-top: 1px solid var(--divider);
+  margin: 2em 0;
+  page-break-after: always;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+  page-break-inside: avoid;
+  font-size: 10pt;
+}
+
+th {
+  background: var(--purple-dim);
+  color: #ffffff;
+  font-weight: 700;
+  text-align: left;
+  padding: 0.6em 0.8em;
+  border-bottom: 2px solid var(--purple);
+}
+
+td {
+  padding: 0.5em 0.8em;
+  border-bottom: 1px solid var(--divider);
+  color: var(--text);
+}
+
+tr:nth-child(even) td {
+  background: rgba(147, 51, 234, 0.03);
+}
+
+/* Page setup */
+@page {
+  size: Letter;
+  margin: 0.7in 0.8in;
+  background: var(--bg);
+}
+
+/* Force background colors to print */
+* {
+  -webkit-print-color-adjust: exact !important;
+  print-color-adjust: exact !important;
+}
+
+/* First page (cover) special handling */
+body > h1:first-child {
+  border: none;
+  font-size: 36pt;
+  text-align: center;
+  margin-top: 2em;
+  color: #ffffff;
+}
+
+body > h1:first-child + p {
+  text-align: center;
+  font-size: 13pt;
+  color: var(--amber);
+  font-weight: 600;
+  margin-bottom: 3em;
+}
+
+/* Make checkbox lists look nicer */
+li input[type="checkbox"] {
+  margin-right: 0.4em;
+  accent-color: var(--purple);
+}

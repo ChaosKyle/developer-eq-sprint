@@ -1,0 +1,29 @@
+# Secrets
+.env
+.env.*
+*.pem
+*.key
+*.crt
+secrets/
+credentials/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Local sprint progress files (anyone running the skill)
+.dev-eq-sprint.md
+.dev-eq-sprint-*.md
+
+# Build artifacts
+node_modules/
+dist/
+build/
+*.log
