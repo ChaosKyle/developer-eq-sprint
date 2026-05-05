@@ -8,22 +8,9 @@ By Kyle (ChaosKyle) — developereq.com
 
 ## Howdy.
 
-If you're reading this, you're probably the engineer who:
+You can ship code. You freeze in the meeting after. Same boat I was in for ten years before I figured out the technical work was 30% of the job and the other 70% was the stuff nobody teaches you in a cert.
 
-- Closes Jira tickets faster than the rest of the team but watches less technical people get promoted past you
-- Has strong opinions in code reviews and zero opinions in standups
-- Walks out of every 1:1 thinking "what was the point of that?"
-- Knows you should "network more" and has no idea what that actually means
-
-Same boat I was in. I spent ten years doing AWS and SRE work, kept getting passed over for stuff I knew I could do, and finally figured out that the technical work was 30% of the job. The other 70% was the stuff nobody teaches you in a cert.
-
-This sprint is the smallest possible loop that fixes that.
-
-**Two weeks. Ten standups. One sprint demo.**
-
-Less than 15 minutes a day. No tools. No accountability buddy. Just you and a pen (or this PDF, or your AI of choice — there's a Claude Code skill version too).
-
-Let's mix it.
+This sprint is the smallest possible loop that fixes that. **Two weeks. Ten standups. One sprint demo.** ~15 min a day. Let's mix it.
 
 ---
 
@@ -143,6 +130,10 @@ Tomorrow: your next 1:1. Look at your calendar. When is it? Block 5 minutes befo
 ```
 Next 1:1 is on: __________  with: __________
 ```
+
+> **🎙 REAL TALK**
+>
+> My Column B was embarrassingly thin the first time I did this. Eight years of AWS, SRE, Splunk, Terraform — and under "social/career" I had: "good at writing." That was it. Not because I was bad at the others — I just hadn't named them. The audit isn't about feeling great. It's about *seeing the gap* so you can pick what to work on. The first time you write it down honestly is the start.
 
 ---
 
@@ -304,6 +295,10 @@ __________________________________________________
 
 Tomorrow: think about the last week of your Slack. We're picking one thread that should've been a meeting (or one meeting that should've been a thread).
 
+> **🎙 REAL TALK**
+>
+> A comment I left on a junior dev's PR years ago: *"Why are you nesting these like this? This is going to be unreadable in 6 months."* No suggestion. No why. No acknowledgment they were trying to solve a real problem. Took me 4 years to figure out why nobody on that team would pair with me. Don't be 27-year-old me.
+
 ---
 
 ## DAY 5: Async vs. Sync
@@ -453,6 +448,34 @@ Phrases I'll use:
 ### ⏭ Commit for Tomorrow
 
 Tomorrow: think of a decision you've disagreed with at work but stayed quiet about.
+
+> **📋 EXAMPLE — what a filled-in card looks like**
+>
+> ```
+> INCIDENT RESPONSE CARD — Kyle
+>
+> Dashboards (open these first):
+> 1. CloudWatch — prod alarms — [link]
+> 2. Datadog — service overview — [link]
+> 3. Honeycomb — error tracing — [link]
+>
+> Rollback (deploy):
+>   ./scripts/rollback.sh <service> <commit-sha>
+>   (commit SHAs in #deploys channel)
+>
+> Escalation:
+>   - 5 min: post in #incidents
+>   - 10 min: page on-call EM
+>   - 15 min: page director
+>
+> Phrases (paste into channel verbatim):
+> 1. "I'm on it. Pulling logs now."
+> 2. "Update in 5 — checking [X] before I act."
+> 3. "Still investigating. Nothing actioned yet."
+> 4. "Action: rolled back deploy <sha>. Confirming impact in 5."
+> ```
+>
+> Don't overthink it. Yours doesn't need to be pretty. It needs to be reachable in 30 seconds at 2am.
 
 ---
 
@@ -612,6 +635,37 @@ What I'll do with this brief: ____________________
 ### ⏭ Commit for Tomorrow
 
 Tomorrow: the last standup. Open your DMs and inbox. You owe somebody a follow-up.
+
+> **📋 EXAMPLE — what a real promotion brief looks like (anonymized)**
+>
+> ```
+> PROMOTION BRIEF — [Name], Senior → Staff Engineer
+>
+> Why I'm already operating at Staff:
+> Over the last 6 months I've owned cross-team initiatives, mentored
+> two senior engineers, and reduced our org's biggest reliability risk
+> without being asked. The remaining gap is visibility, not ability.
+>
+> 1) Reduced production incident MTTR by 41% (38min → 22min)
+>    Owned the on-call playbook rewrite, ran 3 game days, retrained
+>    6 engineers. Quantified via PagerDuty data Q3 vs Q4.
+>
+> 2) Migrated checkout service off the legacy auth layer
+>    Cross-team initiative across Platform + Payments. 4 month effort.
+>    Unblocked the SSO project (now shipping in Q1) and removed our
+>    only remaining single-tenant DB. Estimated $180K/yr infra savings.
+>
+> 3) Mentored two senior engineers through their own promo cycles
+>    Both got promoted; both cited 1:1s with me as a key factor in
+>    their packets. (Manager confirms.)
+>
+> Closing-gap commitment:
+> Running the architecture review for the new fraud detection service
+> next quarter. This puts me in the room with leadership weekly and
+> gives me a written artifact to point to in the next calibration.
+> ```
+>
+> Notice: every project has a number. Every claim is verifiable. The "why I'm already operating there" is 3 sentences, not 3 paragraphs. Steal the format.
 
 ---
 
