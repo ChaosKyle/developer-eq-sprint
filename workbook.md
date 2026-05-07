@@ -4,13 +4,43 @@
 
 By Kyle (ChaosKyle) — developereq.com
 
----
-
 ## Howdy.
 
 You can ship code. You freeze in the meeting after. Same boat I was in for ten years before I figured out the technical work was 30% of the job and the other 70% was the stuff nobody teaches you in a cert.
 
 This sprint is the smallest possible loop that fixes that. **Two weeks. Ten standups. One sprint demo.** ~15 min a day. Let's mix it.
+
+## Sprint at a glance
+
+```
+Sprint 0   → Sprint Planning              (Sun before)
+Week 1     → Mon-Fri (5 standups)         FOUNDATIONS
+Week 1 Retro → Sat
+Week 2     → Mon-Fri (5 standups)         PRESSURE & PRACTICE
+Sprint Demo → Sat                         Show your work
+```
+
+**Week 1 — Foundations:**
+1. The Skill Tree Audit
+2. The 1:1 Reset
+3. Standup Volume
+4. Code Review as Communication
+5. Async vs. Sync
+
+**Week 2 — Pressure & Practice:**
+6. The Calm Voice
+7. The Disagreement Playbook
+8. The Networking Algorithm
+9. The Promotion Ask
+10. The Follow-Up Superpower
+
+## How to use this workbook
+
+- **Print it.** Write in it. Carry it.
+- **Read it on screen.** Type your notes wherever (Notion, Obsidian, plain markdown).
+- **Use AI?** There's a Claude Code skill (`/dev-eq`) and a generic AI prompt pack at [github.com/ChaosKyle/developer-eq-sprint](https://github.com/ChaosKyle/developer-eq-sprint).
+
+Whatever format. Just show up daily.
 
 ---
 
@@ -76,6 +106,21 @@ If you miss a day, don't restart. Pick up tomorrow. The sprint accommodates real
 ---
 
 # WEEK 1: FOUNDATIONS
+
+The week-1 stuff makes you good. Build the daily reps before you face the high-stakes moments in Week 2.
+
+## This week's backlog
+
+| Day | Exercise | Time |
+|---|---|---|
+| 1 | The Skill Tree Audit | 15 min |
+| 2 | The 1:1 Reset | 15 min |
+| 3 | Standup Volume | 10 min + your standup |
+| 4 | Code Review as Communication | 20 min |
+| 5 | Async vs. Sync | 15 min |
+| Sat | Week 1 Retro | 15 min |
+
+**Definition of done for the week:** all 5 standups completed (or honestly skipped). Retro on Saturday.
 
 ---
 
@@ -391,6 +436,19 @@ If you missed a day or two, no shame — almost everyone does. Pick up Monday.
 Week 1 was foundations — the stuff you do every day. Week 2 is the high-stakes stuff. Incidents, disagreements, asking for what you're worth.
 
 These are the moments that change the trajectory of your career. The week-1 stuff makes you good. Week-2 stuff makes you visible.
+
+## This week's backlog
+
+| Day | Exercise | Time |
+|---|---|---|
+| 6 | The Calm Voice (incident leadership) | 20 min |
+| 7 | The Disagreement Playbook | 15 min |
+| 8 | The Networking Algorithm | 30 min (most is sending) |
+| 9 | The Promotion Ask | 30-45 min ⭐ |
+| 10 | The Follow-Up Superpower | 20 min |
+| Sat | Sprint Demo | 30 min |
+
+**Day 9 is the highest-leverage exercise in the sprint** — block real time for it. The Sprint Demo on Saturday is the most important page in this workbook.
 
 ---
 
